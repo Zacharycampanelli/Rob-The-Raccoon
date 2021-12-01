@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BFixed Background Scrolling Layout</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/component.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+
+    <script src="assets/js/modernizr.custom.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="cbp-fbscroller" class="cbp-fbscroller">
+        <nav>
+          <a href="#fbsection1" class="cbp-fbcurrent">Section 1</a>
+          <a href="#fbsection2">Section 2</a>
+          <a href="#fbsection3">Section 3</a>
+          <a href="#fbsection4">Section 4</a>
+          <a href="#fbsection5">Section 5</a>
+          <a href="#fbsection5">Section 6</a>
+          <a href="#fbsection5">Section 7</a>
+          <a href="#fbsection5">Section 8</a>
+        </nav>
+
+        <section id="fbsection1" data-stellar-background-ratio="0.5">
+          <div class="content">
+            <div class="first">
+              <h2>
+                Rob the<br />
+                Raccoon
+              </h2>
+            </div>
+          </div>
+        </section>
+        <section id="fbsection2">
+          <div class="content">
+            <h2>
+              It's finally night time, <br />
+              which means it's time for Rob to go to work!
+            </h2>
+          </div>
+        </section>
+        <section id="fbsection3">
+          <div class="content">
+            <h2>Rob does very professional business</h2>
+          </div>
+        </section>
+        <section id="fbsection4">
+          <div class="content">
+            <h2>And sometimes, Rob does things he shouldn't</h2>
+          </div>
+        </section>
+        <section id="fbsection5">
+          <div class="content">
+            <h2>And sometimes, he even gets himself into trouble</h2>
+          </div>
+        </section>
+        <section id="fbsection6">
+          <div class="content">
+            <h2>Unless he makes a quick escape!</h2>
+          </div>
+        </section>
+        <section id="fbsection7">
+          <div class="content">
+            <h2>Except not this time!</h2>
+          </div>
+        </section>
+        <section id="fbsection8">
+          <div class="content">
+            <h2></h2>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- jquery.easing by http://gsgd.co.uk/ : http://gsgd.co.uk/sandbox/jquery/easing/ -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <!-- waypoints jQuery plugin by http://imakewebthings.com/ : http://imakewebthings.com/jquery-waypoints/ -->
+    <script src="assets/js/waypoints.min.js"></script>
+    <!-- jquery-smartresize by @louis_remi : https://github.com/louisremi/jquery-smartresize -->
+    <script src="assets/js/jquery.debouncedresize.js"></script>
+    <script src="assets/js/cbpFixedScrollLayout.min.js"></script>
+    <script>
+      $(function () {
+        cbpFixedScrollLayout.init();
+      });
+    </script>
+  </body>
+</html>
